@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet" />
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet"
+	th:href="@{/materialize/css/materialize.min.css}"
+	media="screen,projection" />
+<title>Escolalura</title>
+</head>
+<body class="grey lighten-3">
+
+	<h1 class="main-title center">Bem vindo ao Sistema Escolalura</h1>
+
+	<div class="row center">
+		<div class="col s12 m4 l4 waves-effect waves-light">
+			<a href="/aluno/cadastrar">
+				<div class="card-panel hoverable z-depth-1 center gray lighten-4">
+					<i class="large material-icons">perm_identity</i>
+					<div class="truncate">Cadastrar Alunos</div>
+				</div>
+			</a>
+		</div>
+		<div class="col s12 m4 l4 waves-effect waves-light">
+			<a href="/aluno/listar">
+				<div class="card-panel hoverable z-depth-1 center grey lighten-4">
+					<i class="large material-icons">search</i>
+					<div class="truncate">Pesquisar</div>
+				</div>
+			</a>
+		</div>
+		<div class="col s12 m4 l4 waves-effect waves-light">
+			<a href="/aluno/pesquisarnome">
+				<div class="card-panel hoverable z-depth-1 center grey lighten-4">
+					<i class="large material-icons">search</i>
+					<div class="truncate">Pesquisar por nome</div>
+				</div>
+			</a>
+		</div>
+		<div class="col s12 m4 l4 waves-effect waves-light">
+			<a href="/nota/iniciarpesquisa">
+				<div class="card-panel hoverable z-depth-1 center grey lighten-4">
+					<i class="large material-icons">search</i>
+					<div class="truncate">Pesquisar por nota</div>
+				</div>
+			</a>
+		</div>
+		<div class="col s12 m4 l4 waves-effect waves-light">
+			<a href="/geolocalizacao/iniciarpesquisa">
+				<div class="card-panel hoverable z-depth-1 center grey lighten-4">
+					<i class="large material-icons">my_location</i>
+					<div class="truncate">Pesquisar por Geolocalizacao</div>
+				</div>
+			</a>
+		</div>
+		
+	</div>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" th:src="@{/jquery/jquery-3.3.1.min.js}"></script>
+	<script type="text/javascript"
+		th:src="@{/materialize/js/materialize.min.js}"></script>
+</body>
+</html>
